@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offences</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="around">
+    <div class="wrapper" class="hidden">
+        <form action="">
+          <h1>Login</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username" required  id="username">
+            <i class='bx bxs-user'></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Password" required  id="password">
+            <i class='bx bxs-lock-alt' ></i>
+          </div>
+          <button type="submit" class="btn">SIGN IN</button> 
+        </form>        
+    </div> 
+    <div id="form-container" class="hidden" >
+        <h2>Criminal info form</h2>
+        <form id="offenseForm">
+            <label for="name" id="special">Name:</label>
+            <input type="text" id="name" name="name" required class="different">
+            
+            <label for="age" id="special">Age:</label>
+            <input type="number" id="age" name="age" required class="different">
+            
+            <label for="address" id="special">Address:</label>
+            <input type="text" id="address" name="address" required class="different">
+            
+            <label for="contact" id="special">Contact No:</label>
+            <input type="tel" id="contact" name="contact" required class="different">
+
+            <button type="submit" class="btn4">continue</button>
+        </form>
+    </div>
+    <div id="container" class="hidden">
+        <h1>GOVERNMENT OFFENCES AND CONSEQUENCES</h1>
+        <form id="offenceForm">
+            <div class="form-row">
+                <div class="form-column">
+                    <div class="form-group">  
+                        <label for="consequence">Choose legal consequence:</label>
+                        <select id="consequence">
+                            <option value="0">Pay Fine</option>
+                            <option value="1">Serve Punishment</option>
+                        </select>
+                    </div>
+                    <div class="form-group right">
+                        <label for="crime">Select your crime:</label>
+                        <select id="crime">
+                            <option value="">--Select a Crime--</option>
+                            <option value="embezzlement">Embezzlement</option>
+                            <option value="bribery">Bribery</option>
+                            <option value="fraudulentcontracts">Fraudulent Contracts</option>
+                            <option value="abuse-of-power">Abuse of Power</option>
+                            <option value="money-laundering">Money Laundering</option>
+                            
+                        </select>
+                        <div id="subcategories"></div> 
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Submit" id="mainbtn">
+        </form>
+    </div>  
+    <div id="viewBox" class="hidden" > 
+        <center>
+            <h2>
+                <ul>
+                    <li>POLICE DEPT.</li>
+                </ul>
+            </h2>
+        </center>
+        <p id="viewName"></p>
+        <p id="viewAddress"></p>
+        <p id="viewContact"></p>
+        <p id="viewMessage"></p> 
+        <p id="viewOther"></p>
+
+        <center>
+            <button id="btnspecial">enter new<br>info</button>
+        </center>
+        <button id="exitBtn" class="btn-exit">Exit</button>
+
+    </div>
+
+    <div id="recordsPage" class="hidden">
+        <h2>Criminal Records</h2>
+        <ul id="recordsList"></ul>
+        <center><button id="backBtn">Back</button></center>
+    </div>
+   <script src="script - Copy.js"></script>
+</body>
+</html>

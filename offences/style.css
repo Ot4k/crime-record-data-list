@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   font-family: Arial, sans-serif;
+   background: linear-gradient(to right, #333, #111);
+          } 
+   /*.around{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    width: 100%;
+    background: linear-gradient(to right, #333, #111);
+    
+    background-position: center;
+  }*/
+  .wrapper{
+    width: 420px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(9px);
+    color: black;
+    border-radius: 12px;
+    padding: 30px 40px; 
+    
+    
+  }
+  .wrapper h1{
+    font-size: 36px;
+    text-align: center;
+  }
+  .wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 30px 0;
+  }
+  .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px; 
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  }
+  .input-box input::placeholder{
+    color: black;
+  }
+  .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+  
+  }
+  .wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+  }
+   
+  #form-container {
+      width: 400px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center; 
+      
+  }
+  
+  #special {
+      display: block;
+      margin: 10px 0 0 5px;  
+      position: relative; 
+      right: 150px; 
+      font-weight: lighter;
+  }
+  
+  .different {
+      width: 80%;
+      padding: 1px;
+      margin-bottom: 15px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      outline: none; 
+      position: relative; 
+      left: 40px; 
+      top: -20px; 
+      font-size: 1rem;
+  }
+  
+  .btn4{
+      width: 100%;
+      padding: 10px;
+       background: linear-gradient(to right, #333, #111);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+  }
+  .btn4:hover {
+      background-color: #0056b3;
+  }
+  
+          #container {
+              background: white;
+              padding: 20px;
+              border-radius: 10px;
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+              width: 90%;
+              max-width: 600px;
+              box-sizing: border-box; 
+          } 
+          .hidden{ 
+              display: none;
+          }
+  
+          h1 {
+              text-align: center;
+              margin-bottom: 20px;
+              color: #333;
+              font-size: 22px;
+          }
+  
+          .form-group {
+              margin-bottom: 15px;
+          }
+  
+          .form-group label {
+              display: block;
+              font-weight: bold;
+              margin-bottom: 5px;
+              font-size: 14px;
+              color: #333;
+          }
+  
+          .form-group input, .form-group select {
+              width: 100%;
+              padding: 10px;
+              border-radius: 5px;
+              border: 1px solid #ddd;
+              box-sizing: border-box;
+          }
+  
+          .form-group.right {
+              margin-top: 15px;
+          }
+  
+          input[type="submit"] {
+              width: 100%;
+              padding: 12px;
+              background: linear-gradient(to right, #333, #111);
+              border: none;
+              border-radius: 5px;
+              color: white;
+              font-size: 16px;
+              cursor: pointer;
+              transition: background 0.3s;
+          }
+  
+          input[type="submit"]:hover {
+              background: linear-gradient(to right, #111, #333);
+          }
+  
+          #subcategories {
+              margin-top: 10px;
+              display: block;
+          }
+  
+          /* Media Queries */
+          @media (max-width: 480px) {
+              #container {
+                  width: 100%;
+                  padding: 15px;
+              }
+  
+              h1 {
+                  font-size: 18px;
+              }
+  
+              .form-group input, .form-group select {
+                  padding: 8px;
+                  font-size: 14px;
+              }
+  
+              input[type="submit"] {
+                  padding: 10px;
+                  font-size: 14px;
+              } 
+              
+          }
+  #viewBox {
+    background: linear-gradient(135deg, rgb(19, 14, 54), rgb(30, 20, 70)); /* Gradient background for depth */
+    width: 500px;
+    height: 60vh;
+    border-radius: 25px; /* More pronounced rounded corners */
+    box-shadow: 0px 20px 40px 10px rgba(0, 0, 0, 0.7);
+    overflow: hidden; /* Ensures no content spills out */
+    padding: 20px; /* Adds padding to give content some breathing room */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for a refined edge */
+}
+
+#viewBox h2 {
+    position: relative;
+    /* top: 10px; */
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1); /* Slight transparent background to highlight the text */
+    color: #f8f8f8; /* Slightly lighter text color for contrast */
+    padding: 10px 15px; /* Increased padding for a more pronounced look */
+    border-radius: 25px; /* Smoother rounded corners */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow for depth */
+    width: fit-content; /* Fits width to the content */
+    margin: auto; /* Centers the heading horizontally */
+    box-shadow: none; /* Removed the box shadow to reduce clutter */
+}
+
+#viewBox p {
+    color: #cccccc; /* Lighter grey for better readability */
+    position: relative;
+    /* top: 30px; */
+    left: 0px; /* Centered text */
+    padding: 4px 15px; /* Increased padding for uniformity with h2 */
+    font-size: 1rem;
+    font-weight: normal; /* Normalized font weight for better contrast with h2 */
+    line-height: 1.5; /* Improved line spacing for readability */
+}
+
+#viewBox h2 ul li {
+    list-style: none;
+    padding: 5px 0; /* Added padding for better spacing between list items */
+    margin-left: 20px; /* Added margin to indent list items */
+}
+
+    
+   #viewBox button {
+    padding: 10px 20px; /* Increased padding for better click area */
+    border-radius: 25px; /* Smoother, more rounded corners */
+    background: linear-gradient(145deg, #333, #000); /* Gradient background for depth */
+    color: #f0f0f0; /* Slightly off-white text for a softer look */
+    border: 2px solid #444; /* Subtle border for added dimension */
+    cursor: pointer;
+    margin-top: 30px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), -4px -4px 8px rgba(50, 50, 50, 0.5); /* 3D shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#viewBox button:hover {
+    background: linear-gradient(145deg, #000, #333); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6), -6px -6px 12px rgba(50, 50, 50, 0.6); /* Enhanced shadow on hover */
+}
+
+#viewBox button:active {
+    transform: translateY(2px); /* Button press effect */
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.6), inset -2px -2px 4px rgba(50, 50, 50, 0.6); /* Inset shadow for pressed effect */
+}
+
+
+
+#viewBox #exitBtn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #ff5f5f, #d9534f); /* Red gradient for the exit button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; /* Positioning at the top-right corner */
+    right: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+#viewBox #exitBtn:hover {
+    background: linear-gradient(145deg, #d9534f, #ff5f5f); /* Reverse gradient on hover */
+    transform: translateY(-2px);
+}
+
+.view-rec{
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #5f8aff, #d9534f); /* Red gradient for the exit button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; /* Positioning at the top-right corner */
+    left: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+
+
+/* General Styling for the Records Page */
+#recordsPage {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the Title */
+#recordsPage h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the List of Records */
+#recordsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#recordsList li {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#recordsList li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styling for Each Record's Details */
+#recordsList li span {
+  display: block;
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#recordsList li span strong {
+  color: #333;
+  font-weight: bold;
+}
+
+
+#recordsList p {
+    padding-bottom: 10px;
+}
+
+/* Styling for the Back Button */
+#backBtn {
+  display: block;
+  width: 20%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#backBtn:hover {
+  background-color: #0056b3;
+}
